@@ -1,0 +1,10 @@
+|comparador_troco
+valor_troco[0] => LessThan0.IN12
+valor_troco[1] => LessThan0.IN11
+valor_troco[2] => LessThan0.IN10
+valor_troco[3] => LessThan0.IN9
+valor_troco[4] => LessThan0.IN8
+valor_troco[5] => LessThan0.IN7
+compra_valida <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

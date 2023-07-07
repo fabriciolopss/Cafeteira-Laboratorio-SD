@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_reg_dinheiro is
+end tb_reg_dinheiro;
+
+architecture test of tb_reg_dinheiro is
+    signal fio_clk : std_logic := '0';
+    signal fio_reset : std_logic;
+    signal fio_enable : std_logic;
+    signal fio_dinheiro_guardado : std_logic_vector(5 downto 0);
+    signal fio_dinheiro_registrado : std_logic_vector(5 downto 0);
+
+    component reg_dinheiro
+        port(
+            clk : in std_logic;
+            reset : in std_logic;
+            enable : in std_logic;
+            dinheiro_guardado: in std_logic_vector(5 downto 0);
+            dinheiro_registrado : out std_logic_vector(5 downto 0)
+        );
+    end component;
+
+begin
+    uut: reg_dinheiro port map(
+        clk => fio_clk,
+        reset => fio_reset,
+        enable => fio_enable,
+        dinheiro_guardado => fio_dinheiro_guardado,
+        dinheiro_registrado => fio_dinheiro_registrado
+    );
+
+    fio_clk <= not fio_clk after 5 ns;
+
+    process
+    begin
+        fio_reset <= '1';
+        wait for 10 ns;
+        fio_reset <= '0';
+        wait for 10 ns;
+
+        fio_enable <= '1';
+        fio_dinheiro_guardado <= "000000";
+        wait for 10 ns;
+        assert (fio_dinheiro_registrado = "000000") report "Test failed for dinheiro_guardado = 000000" severity error;
+
+        fio_dinheiro_guardado <= "000001";
+        wait for 10 ns;
+        assert (fio_dinheiro_registrado = "000001") report "Test failed for dinheiro_guardado = 000001" severity error;
+
+        -- Add more test cases here
+
+        wait;
+    end process;
+end test;

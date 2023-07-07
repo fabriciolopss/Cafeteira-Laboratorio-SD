@@ -1,0 +1,23 @@
+|mux_troco
+valor_troco[0] => output_troco.DATAB
+valor_troco[1] => output_troco.DATAB
+valor_troco[2] => output_troco.DATAB
+valor_troco[3] => output_troco.DATAB
+valor_troco[4] => output_troco.DATAB
+valor_troco[5] => output_troco.DATAB
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => preparar.DATAIN
+preparar <= compra_valida.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[0] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[1] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[2] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[3] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[4] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[5] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+
+

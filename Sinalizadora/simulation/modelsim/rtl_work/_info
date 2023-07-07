@@ -1,0 +1,410 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Trabalho Final\Sinalizadora\simulation\modelsim
+Ecomparador_troco
+Z1 w1686860390
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\altera\13.0sp1\Trabalho Final\Sinalizadora\simulation\modelsim
+Z7 8C:/altera/13.0sp1/Trabalho Final/Componentes/comparador_troco/comparador_troco.vhd
+Z8 FC:/altera/13.0sp1/Trabalho Final/Componentes/comparador_troco/comparador_troco.vhd
+l0
+L6
+VkcKTf9@]`BDG7?I]D3gT@1
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1688683286.929000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/comparador_troco/comparador_troco.vhd|
+Z12 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/comparador_troco/comparador_troco.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 F9@8bboo<o@?[G?KoiTZk1
+!i10b 1
+Acomportamental
+R2
+R3
+R4
+R5
+DEx4 work 16 comparador_troco 0 22 kcKTf9@]`BDG7?I]D3gT@1
+l14
+L13
+VYP=kz^JLS>M<6DTNj74j?1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 G8NoO0`gLkK`mk0eVS_F92
+!i10b 1
+Econtroladora
+Z15 w1688584971
+R4
+R5
+R6
+Z16 8C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd
+Z17 FC:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd
+l0
+L4
+VeZ7^e4a74XJ=Q44i4oGFU1
+R9
+31
+Z18 !s108 1688683287.136000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd|
+Z20 !s107 C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd|
+R13
+R14
+!s100 RglP4Ra]f0[@Kn5Fkc1I<3
+!i10b 1
+Artl
+R4
+R5
+DEx4 work 12 controladora 0 22 eZ7^e4a74XJ=Q44i4oGFU1
+l27
+L24
+VB8IkQXU7e4a55n5A8EO9E3
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 3^mfVG<S4;<bozLle?FHA1
+!i10b 1
+Edecod_bebida
+Z21 w1687122324
+R4
+R5
+R6
+Z22 8C:/altera/13.0sp1/Trabalho Final/Componentes/decod_bebida/decod_bebida.vhd
+Z23 FC:/altera/13.0sp1/Trabalho Final/Componentes/decod_bebida/decod_bebida.vhd
+l0
+L4
+Vz3FZl_7F4P@R0^V<dJcJ<3
+R9
+31
+Z24 !s108 1688683286.774000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/decod_bebida/decod_bebida.vhd|
+Z26 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/decod_bebida/decod_bebida.vhd|
+R13
+R14
+!s100 OKcnNMZ>dAk5jR8oo<NYC3
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 12 decod_bebida 0 22 z3FZl_7F4P@R0^V<dJcJ<3
+l11
+L10
+V6[`iPPa;=:C@?o3;>^UhB1
+R9
+31
+R24
+R25
+R26
+R13
+R14
+!s100 d0n?h9VIJbzgf[NkcgLQ[1
+!i10b 1
+Emaquinadecafe
+Z27 w1688677492
+R4
+R5
+R6
+Z28 8C:/altera/13.0sp1/Trabalho Final/Caminho de Dados/MaquinaDeCafe.vhd
+Z29 FC:/altera/13.0sp1/Trabalho Final/Caminho de Dados/MaquinaDeCafe.vhd
+l0
+L4
+Vi5l3F629?;aSl9@AE;XB?2
+R9
+31
+Z30 !s108 1688683287.320000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Caminho de Dados/MaquinaDeCafe.vhd|
+Z32 !s107 C:/altera/13.0sp1/Trabalho Final/Caminho de Dados/MaquinaDeCafe.vhd|
+R13
+R14
+!s100 J;`nU9A:@?FiaBcU?B2G50
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 13 maquinadecafe 0 22 i5l3F629?;aSl9@AE;XB?2
+l109
+L26
+VNmbG?nnS6807]B0JPn>MV2
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 0`>3A2O4PZ3o^SBaERR?@1
+!i10b 1
+Emux_troco
+Z33 w1687518872
+R2
+R3
+R4
+R5
+R6
+Z34 8C:/altera/13.0sp1/Trabalho Final/Componentes/mux_troco/mux_troco.vhd
+Z35 FC:/altera/13.0sp1/Trabalho Final/Componentes/mux_troco/mux_troco.vhd
+l0
+L6
+VdG7E0:2AnE6WB<]M6jzcH0
+R9
+31
+Z36 !s108 1688683286.612000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/mux_troco/mux_troco.vhd|
+Z38 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/mux_troco/mux_troco.vhd|
+R13
+R14
+!s100 JZ;^RgbZCNXAgdjZ0o6;03
+!i10b 1
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 9 mux_troco 0 22 dG7E0:2AnE6WB<]M6jzcH0
+l17
+L16
+VZT^XZUefFWbKjZZ5eR3^F1
+R9
+31
+R36
+R37
+R38
+R13
+R14
+!s100 ElUnVmYgTiLEbzDbm6Hki0
+!i10b 1
+Ereg_dinheiro
+Z39 w1688678503
+Z40 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R4
+R5
+R6
+Z41 8C:/altera/13.0sp1/Trabalho Final/Componentes/reg_dinheiro/reg_dinheiro.vhd
+Z42 FC:/altera/13.0sp1/Trabalho Final/Componentes/reg_dinheiro/reg_dinheiro.vhd
+l0
+L5
+VlAHB^gQ0k8=REkL7@2T;O1
+R9
+31
+Z43 !s108 1688683286.432000
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/reg_dinheiro/reg_dinheiro.vhd|
+Z45 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/reg_dinheiro/reg_dinheiro.vhd|
+R13
+R14
+!s100 G^E[c9m;6FZ:=I;hR?8h00
+!i10b 1
+Artl
+R40
+R4
+R5
+DEx4 work 12 reg_dinheiro 0 22 lAHB^gQ0k8=REkL7@2T;O1
+l19
+L18
+V?EP4XjR3cjT5m6MDb[gB`0
+R9
+31
+R43
+R44
+R45
+R13
+R14
+!s100 9DamkBn8KKiThK>l[hT1i0
+!i10b 1
+Eseletor
+Z46 w1688676698
+R40
+R4
+R5
+R6
+Z47 8C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd
+Z48 FC:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd
+l0
+L5
+V<`_cm8ek:1Zh=TPNgl0H>3
+R9
+31
+Z49 !s108 1688683285.593000
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd|
+Z51 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd|
+R13
+R14
+!s100 jKC2O3fZY;Vzj6X^k^WL20
+!i10b 1
+Abehavioral
+R40
+R4
+R5
+DEx4 work 7 seletor 0 22 <`_cm8ek:1Zh=TPNgl0H>3
+l19
+L17
+VPdjSN9AZG;?WW1c]To?FY2
+R9
+31
+R49
+R50
+R51
+R13
+R14
+!s100 LVhBFnV2ZLiGN>X=M0Dkz0
+!i10b 1
+Esinalizadora
+Z52 w1688675794
+R4
+R5
+R6
+Z53 8C:/altera/13.0sp1/Trabalho Final/Sinalizadora/sinalizadora.vhd
+Z54 FC:/altera/13.0sp1/Trabalho Final/Sinalizadora/sinalizadora.vhd
+l0
+L4
+V7zRgIz`L<IM?:^n_ih6>11
+R9
+31
+Z55 !s108 1688683287.482000
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Sinalizadora/sinalizadora.vhd|
+Z57 !s107 C:/altera/13.0sp1/Trabalho Final/Sinalizadora/sinalizadora.vhd|
+R13
+R14
+!s100 6iYoekFWd_ToloC15Y@ia2
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 12 sinalizadora 0 22 7zRgIz`L<IM?:^n_ih6>11
+l86
+L26
+Ve7bRM0bIh?R75gk`d2kbg1
+R9
+31
+R55
+R56
+R57
+R13
+R14
+!s100 =R1To_^HiRa1aHW2XbT382
+!i10b 1
+Esomador_dinheiro
+Z58 w1687913979
+R3
+R2
+R4
+R5
+R6
+Z59 8C:/altera/13.0sp1/Trabalho Final/Componentes/somador_dinheiro/somador_dinheiro.vhd
+Z60 FC:/altera/13.0sp1/Trabalho Final/Componentes/somador_dinheiro/somador_dinheiro.vhd
+l0
+L5
+VWDBCP1[P6T55C?Xmo5UIg1
+R9
+31
+Z61 !s108 1688683286.287000
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/somador_dinheiro/somador_dinheiro.vhd|
+Z63 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/somador_dinheiro/somador_dinheiro.vhd|
+R13
+R14
+!s100 6M[Abk340_g1cU?1R8MQm3
+!i10b 1
+Acomportamental
+R3
+R2
+R4
+R5
+DEx4 work 16 somador_dinheiro 0 22 WDBCP1[P6T55C?Xmo5UIg1
+l11
+L10
+VGA>>S<IT5jReB[ECNJ3Y]2
+R9
+31
+R61
+R62
+R63
+R13
+R14
+!s100 Q^`79aGNeoNiRn^bGSGlf2
+!i10b 1
+Esubtrator_troco
+Z64 w1686857194
+R3
+R2
+R4
+R5
+R6
+Z65 8C:/altera/13.0sp1/Trabalho Final/Componentes/subtrator_troco/subtrator_troco.vhd
+Z66 FC:/altera/13.0sp1/Trabalho Final/Componentes/subtrator_troco/subtrator_troco.vhd
+l0
+L5
+V8Hn4@eoBCKP=ceL:a5[:z2
+R9
+31
+Z67 !s108 1688683286.115000
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/subtrator_troco/subtrator_troco.vhd|
+Z69 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/subtrator_troco/subtrator_troco.vhd|
+R13
+R14
+!s100 ij2FJS]UST88jHBK>2g9l0
+!i10b 1
+Acomportamental
+R3
+R2
+R4
+R5
+DEx4 work 15 subtrator_troco 0 22 8Hn4@eoBCKP=ceL:a5[:z2
+l12
+L11
+V[1FaTzd9]AYPnzMOcc4]C0
+R9
+31
+R67
+R68
+R69
+R13
+R14
+!s100 N>68bG<6j6NejMD>MJ[]B3
+!i10b 1
+Etb_sinalizadora
+Z70 w1688677712
+R4
+R5
+R6
+Z71 8C:/altera/13.0sp1/Trabalho Final/Sinalizadora/tb_Sinalizadora.vhd
+Z72 FC:/altera/13.0sp1/Trabalho Final/Sinalizadora/tb_Sinalizadora.vhd
+l0
+L4
+VdOX]NPLf`17inzdQRP40o0
+!s100 Y4jD^]YE2ZU;[e:Td?Ek22
+R9
+31
+!i10b 1
+Z73 !s108 1688683287.688000
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Sinalizadora/tb_Sinalizadora.vhd|
+Z75 !s107 C:/altera/13.0sp1/Trabalho Final/Sinalizadora/tb_Sinalizadora.vhd|
+R13
+R14
+Atestbench
+R4
+R5
+DEx4 work 15 tb_sinalizadora 0 22 dOX]NPLf`17inzdQRP40o0
+l53
+L7
+VTFbbhY=[jPgDVDd93?6Kh2
+!s100 Qa3h]?X5i>F=;BZNLai2W3
+R9
+31
+!i10b 1
+R73
+R74
+R75
+R13
+R14

@@ -1,0 +1,149 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Sinalizadora_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Seletor
+# -- Compiling architecture Behavioral of Seletor
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/subtrator_troco/subtrator_troco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity subtrator_troco
+# -- Compiling architecture comportamental of subtrator_troco
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/somador_dinheiro/somador_dinheiro.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity somador_dinheiro
+# -- Compiling architecture comportamental of somador_dinheiro
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/reg_dinheiro/reg_dinheiro.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_dinheiro
+# -- Compiling architecture rtl of reg_dinheiro
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/mux_troco/mux_troco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux_troco
+# -- Compiling architecture rtl of mux_troco
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/decod_bebida/decod_bebida.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decod_bebida
+# -- Compiling architecture Behavioral of decod_bebida
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Componentes/comparador_troco/comparador_troco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comparador_troco
+# -- Compiling architecture comportamental of comparador_troco
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Controladora
+# -- Compiling architecture rtl of Controladora
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Caminho de Dados/MaquinaDeCafe.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MaquinaDeCafe
+# -- Compiling architecture Behavioral of MaquinaDeCafe
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Sinalizadora/sinalizadora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sinalizadora
+# -- Compiling architecture Behavioral of Sinalizadora
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Sinalizadora/tb_Sinalizadora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_Sinalizadora
+# -- Compiling architecture testbench of tb_Sinalizadora
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_Sinalizadora
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_Sinalizadora 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sinalizadora(testbench)
+# Loading work.sinalizadora(behavioral)
+# Loading work.maquinadecafe(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.subtrator_troco(comportamental)
+# Loading work.somador_dinheiro(comportamental)
+# Loading work.mux_troco(rtl)
+# Loading work.comparador_troco(comportamental)
+# Loading work.decod_bebida(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.reg_dinheiro(rtl)
+# Loading work.seletor(behavioral)
+# Loading work.controladora(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizadora/dut/datapath/comparador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizadora/dut/datapath/somador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizadora/dut/datapath/somador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizadora/dut/datapath/somador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizadora/dut/datapath/sub_troco
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sinalizadora/dut/datapath/sub_troco
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sinalizadora/dut/datapath/sub_troco
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sinalizadora/dut/datapath/sub_troco
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sinalizadora/dut/datapath/comparador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /tb_sinalizadora/dut/datapath/sub_troco
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 2  Instance: /tb_sinalizadora/dut/datapath/sub_troco

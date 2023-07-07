@@ -1,0 +1,343 @@
+|Sinalizadora
+reset => MaquinaDeCafe:datapath.reset
+reset => Controladora:controladora_inst.reset
+entrada[0] => MaquinaDeCafe:datapath.entrada[0]
+entrada[1] => MaquinaDeCafe:datapath.entrada[1]
+entrada[2] => MaquinaDeCafe:datapath.entrada[2]
+entrada[3] => MaquinaDeCafe:datapath.entrada[3]
+entrada[4] => MaquinaDeCafe:datapath.entrada[4]
+entrada[5] => MaquinaDeCafe:datapath.entrada[5]
+bebida[0] => MaquinaDeCafe:datapath.bebida[0]
+bebida[1] => MaquinaDeCafe:datapath.bebida[1]
+bebida[2] => MaquinaDeCafe:datapath.bebida[2]
+tamanho[0] => MaquinaDeCafe:datapath.tamanho[0]
+tamanho[1] => MaquinaDeCafe:datapath.tamanho[1]
+temperatura[0] => MaquinaDeCafe:datapath.temperatura[0]
+temperatura[1] => MaquinaDeCafe:datapath.temperatura[1]
+acucar => MaquinaDeCafe:datapath.acucar
+alerta_cheio <= Controladora:controladora_inst.alerta_cheio
+dar_troco <= Controladora:controladora_inst.dar_troco
+output_troco[0] <= MaquinaDeCafe:datapath.output_troco[0]
+output_troco[1] <= MaquinaDeCafe:datapath.output_troco[1]
+output_troco[2] <= MaquinaDeCafe:datapath.output_troco[2]
+output_troco[3] <= MaquinaDeCafe:datapath.output_troco[3]
+output_troco[4] <= MaquinaDeCafe:datapath.output_troco[4]
+output_troco[5] <= MaquinaDeCafe:datapath.output_troco[5]
+output_bebida[0] <= MaquinaDeCafe:datapath.bebida_resultado[0]
+output_bebida[1] <= MaquinaDeCafe:datapath.bebida_resultado[1]
+output_bebida[2] <= MaquinaDeCafe:datapath.bebida_resultado[2]
+output_temperatura[0] <= MaquinaDeCafe:datapath.temperatura_resultado[0]
+output_temperatura[1] <= MaquinaDeCafe:datapath.temperatura_resultado[1]
+output_tamanho[0] <= MaquinaDeCafe:datapath.tamanho_resultado[0]
+output_tamanho[1] <= MaquinaDeCafe:datapath.tamanho_resultado[1]
+output_acucar <= MaquinaDeCafe:datapath.acucar_resultado
+output_dinheiro_guardado_momento[0] <= MaquinaDeCafe:datapath.output_dinheiro_guardado[0]
+output_dinheiro_guardado_momento[1] <= MaquinaDeCafe:datapath.output_dinheiro_guardado[1]
+output_dinheiro_guardado_momento[2] <= MaquinaDeCafe:datapath.output_dinheiro_guardado[2]
+output_dinheiro_guardado_momento[3] <= MaquinaDeCafe:datapath.output_dinheiro_guardado[3]
+output_dinheiro_guardado_momento[4] <= MaquinaDeCafe:datapath.output_dinheiro_guardado[4]
+output_dinheiro_guardado_momento[5] <= MaquinaDeCafe:datapath.output_dinheiro_guardado[5]
+start => Controladora:controladora_inst.start
+clk => MaquinaDeCafe:datapath.clk
+clk => Controladora:controladora_inst.clk
+cancelar => Controladora:controladora_inst.cancelar
+
+
+|Sinalizadora|MaquinaDeCafe:datapath
+reset => reg_dinheiro:registrador.reset_reg
+clk => ~NO_FANOUT~
+entrada[0] => somador_dinheiro:somador.entrada_somador[0]
+entrada[1] => somador_dinheiro:somador.entrada_somador[1]
+entrada[2] => somador_dinheiro:somador.entrada_somador[2]
+entrada[3] => somador_dinheiro:somador.entrada_somador[3]
+entrada[4] => somador_dinheiro:somador.entrada_somador[4]
+entrada[5] => somador_dinheiro:somador.entrada_somador[5]
+bebida[0] => Seletor:selet_bebida.entrada[0]
+bebida[1] => Seletor:selet_bebida.entrada[1]
+bebida[2] => Seletor:selet_bebida.entrada[2]
+tamanho[0] => Seletor:selet_tamanho.entrada[0]
+tamanho[1] => Seletor:selet_tamanho.entrada[1]
+temperatura[0] => Seletor:selet_temperatura.entrada[0]
+temperatura[1] => Seletor:selet_temperatura.entrada[1]
+acucar => acucar_resultado.DATAIN
+seletor_bebida => Seletor:selet_bebida.on_off
+seletor_bebida => Seletor:selet_bebida.clk
+seletor_tamanho => Seletor:selet_tamanho.on_off
+seletor_tamanho => Seletor:selet_tamanho.clk
+seletor_temperatura => Seletor:selet_temperatura.on_off
+seletor_temperatura => Seletor:selet_temperatura.clk
+bebida_resultado[0] <= Seletor:selet_bebida.saida[0]
+bebida_resultado[1] <= Seletor:selet_bebida.saida[1]
+bebida_resultado[2] <= Seletor:selet_bebida.saida[2]
+tamanho_resultado[0] <= Seletor:selet_tamanho.saida[0]
+tamanho_resultado[1] <= Seletor:selet_tamanho.saida[1]
+acucar_resultado <= acucar.DB_MAX_OUTPUT_PORT_TYPE
+output_compra_valida <= comparador_troco:comparador.compra_valida
+temperatura_resultado[0] <= Seletor:selet_temperatura.saida[0]
+temperatura_resultado[1] <= Seletor:selet_temperatura.saida[1]
+output_dinheiro_guardado[0] <= somador_dinheiro:somador.dinheiro_guardado[0]
+output_dinheiro_guardado[1] <= somador_dinheiro:somador.dinheiro_guardado[1]
+output_dinheiro_guardado[2] <= somador_dinheiro:somador.dinheiro_guardado[2]
+output_dinheiro_guardado[3] <= somador_dinheiro:somador.dinheiro_guardado[3]
+output_dinheiro_guardado[4] <= somador_dinheiro:somador.dinheiro_guardado[4]
+output_dinheiro_guardado[5] <= somador_dinheiro:somador.dinheiro_guardado[5]
+output_troco[0] <= mux_troco:multiplexador.output_troco[0]
+output_troco[1] <= mux_troco:multiplexador.output_troco[1]
+output_troco[2] <= mux_troco:multiplexador.output_troco[2]
+output_troco[3] <= mux_troco:multiplexador.output_troco[3]
+output_troco[4] <= mux_troco:multiplexador.output_troco[4]
+output_troco[5] <= mux_troco:multiplexador.output_troco[5]
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|subtrator_troco:sub_troco
+valor_bebida[0] => Add0.IN6
+valor_bebida[1] => Add0.IN5
+valor_bebida[2] => Add0.IN4
+dinheiro_guardado[0] => Add0.IN12
+dinheiro_guardado[1] => Add0.IN11
+dinheiro_guardado[2] => Add0.IN10
+dinheiro_guardado[3] => Add0.IN9
+dinheiro_guardado[4] => Add0.IN8
+dinheiro_guardado[5] => Add0.IN7
+valor_troco[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|somador_dinheiro:somador
+entrada_somador[0] => Add0.IN6
+entrada_somador[1] => Add0.IN5
+entrada_somador[2] => Add0.IN4
+entrada_somador[3] => Add0.IN3
+entrada_somador[4] => Add0.IN2
+entrada_somador[5] => Add0.IN1
+dinheiro_registrado[0] => Add0.IN12
+dinheiro_registrado[1] => Add0.IN11
+dinheiro_registrado[2] => Add0.IN10
+dinheiro_registrado[3] => Add0.IN9
+dinheiro_registrado[4] => Add0.IN8
+dinheiro_registrado[5] => Add0.IN7
+dinheiro_guardado[0] <= dinheiro_guardado.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_guardado[1] <= dinheiro_guardado.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_guardado[2] <= dinheiro_guardado.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_guardado[3] <= dinheiro_guardado.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_guardado[4] <= dinheiro_guardado.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_guardado[5] <= dinheiro_guardado.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|mux_troco:multiplexador
+valor_troco[0] => output_troco.DATAB
+valor_troco[1] => output_troco.DATAB
+valor_troco[2] => output_troco.DATAB
+valor_troco[3] => output_troco.DATAB
+valor_troco[4] => output_troco.DATAB
+valor_troco[5] => output_troco.DATAB
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => output_troco.OUTPUTSELECT
+compra_valida => preparar.DATAIN
+preparar <= compra_valida.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[0] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[1] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[2] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[3] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[4] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+output_troco[5] <= output_troco.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|comparador_troco:comparador
+valor_troco[0] => LessThan0.IN12
+valor_troco[1] => LessThan0.IN11
+valor_troco[2] => LessThan0.IN10
+valor_troco[3] => LessThan0.IN9
+valor_troco[4] => LessThan0.IN8
+valor_troco[5] => LessThan0.IN7
+compra_valida <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|decod_bebida:decodificador
+tamanho[0] => Equal0.IN1
+tamanho[0] => Equal1.IN1
+tamanho[0] => Equal2.IN1
+tamanho[0] => Equal3.IN1
+tamanho[0] => Equal4.IN1
+tamanho[0] => Equal5.IN1
+tamanho[0] => Equal6.IN4
+tamanho[0] => Equal7.IN3
+tamanho[0] => Equal8.IN3
+tamanho[0] => Equal9.IN3
+tamanho[0] => Equal10.IN2
+tamanho[0] => Equal11.IN2
+tamanho[0] => Equal12.IN0
+tamanho[0] => Equal13.IN0
+tamanho[0] => Equal14.IN0
+tamanho[1] => Equal0.IN0
+tamanho[1] => Equal1.IN0
+tamanho[1] => Equal2.IN0
+tamanho[1] => Equal3.IN0
+tamanho[1] => Equal4.IN0
+tamanho[1] => Equal5.IN0
+tamanho[1] => Equal6.IN0
+tamanho[1] => Equal7.IN0
+tamanho[1] => Equal8.IN0
+tamanho[1] => Equal9.IN0
+tamanho[1] => Equal10.IN0
+tamanho[1] => Equal11.IN0
+tamanho[1] => Equal12.IN4
+tamanho[1] => Equal13.IN3
+tamanho[1] => Equal14.IN3
+tipo_bebida[0] => Equal0.IN4
+tipo_bebida[0] => Equal1.IN4
+tipo_bebida[0] => Equal2.IN3
+tipo_bebida[0] => Equal3.IN3
+tipo_bebida[0] => Equal4.IN4
+tipo_bebida[0] => Equal5.IN2
+tipo_bebida[0] => Equal6.IN3
+tipo_bebida[0] => Equal7.IN4
+tipo_bebida[0] => Equal8.IN2
+tipo_bebida[0] => Equal9.IN2
+tipo_bebida[0] => Equal10.IN4
+tipo_bebida[0] => Equal11.IN1
+tipo_bebida[0] => Equal12.IN3
+tipo_bebida[0] => Equal13.IN4
+tipo_bebida[0] => Equal14.IN2
+tipo_bebida[1] => Equal0.IN3
+tipo_bebida[1] => Equal1.IN3
+tipo_bebida[1] => Equal2.IN4
+tipo_bebida[1] => Equal3.IN2
+tipo_bebida[1] => Equal4.IN2
+tipo_bebida[1] => Equal5.IN4
+tipo_bebida[1] => Equal6.IN2
+tipo_bebida[1] => Equal7.IN2
+tipo_bebida[1] => Equal8.IN4
+tipo_bebida[1] => Equal9.IN1
+tipo_bebida[1] => Equal10.IN1
+tipo_bebida[1] => Equal11.IN4
+tipo_bebida[1] => Equal12.IN2
+tipo_bebida[1] => Equal13.IN2
+tipo_bebida[1] => Equal14.IN4
+tipo_bebida[2] => Equal0.IN2
+tipo_bebida[2] => Equal1.IN2
+tipo_bebida[2] => Equal2.IN2
+tipo_bebida[2] => Equal3.IN4
+tipo_bebida[2] => Equal4.IN3
+tipo_bebida[2] => Equal5.IN3
+tipo_bebida[2] => Equal6.IN1
+tipo_bebida[2] => Equal7.IN1
+tipo_bebida[2] => Equal8.IN1
+tipo_bebida[2] => Equal9.IN4
+tipo_bebida[2] => Equal10.IN3
+tipo_bebida[2] => Equal11.IN3
+tipo_bebida[2] => Equal12.IN1
+tipo_bebida[2] => Equal13.IN1
+tipo_bebida[2] => Equal14.IN1
+valor_bebida[0] <= valor_bebida[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+valor_bebida[1] <= valor_bebida[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+valor_bebida[2] <= valor_bebida[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|reg_dinheiro:registrador
+clk => dinheiro_registrado_reg[0]~reg0.CLK
+clk => dinheiro_registrado_reg[1]~reg0.CLK
+clk => dinheiro_registrado_reg[2]~reg0.CLK
+clk => dinheiro_registrado_reg[3]~reg0.CLK
+clk => dinheiro_registrado_reg[4]~reg0.CLK
+clk => dinheiro_registrado_reg[5]~reg0.CLK
+reset_reg => dinheiro_registrado_reg[0]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[1]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[2]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[3]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[4]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[5]~reg0.ACLR
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+dinheiro_guardado_reg[0] => Equal0.IN11
+dinheiro_guardado_reg[0] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[1] => Equal0.IN10
+dinheiro_guardado_reg[1] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[2] => Equal0.IN9
+dinheiro_guardado_reg[2] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[3] => Equal0.IN8
+dinheiro_guardado_reg[3] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[4] => Equal0.IN7
+dinheiro_guardado_reg[4] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[5] => Equal0.IN6
+dinheiro_guardado_reg[5] => dinheiro_registrado_reg.DATAB
+dinheiro_registrado_reg[0] <= dinheiro_registrado_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[1] <= dinheiro_registrado_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[2] <= dinheiro_registrado_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[3] <= dinheiro_registrado_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[4] <= dinheiro_registrado_reg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[5] <= dinheiro_registrado_reg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|Seletor:selet_bebida
+entrada[0] => reg_saida.DATAB
+entrada[1] => reg_saida.DATAB
+entrada[2] => reg_saida.DATAB
+on_off => reg_saida.OUTPUTSELECT
+on_off => reg_saida.OUTPUTSELECT
+on_off => reg_saida.OUTPUTSELECT
+clk => reg_saida[0].CLK
+clk => reg_saida[1].CLK
+clk => reg_saida[2].CLK
+saida[0] <= reg_saida[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= reg_saida[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= reg_saida[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|Seletor:selet_tamanho
+entrada[0] => reg_saida.DATAB
+entrada[1] => reg_saida.DATAB
+on_off => reg_saida.OUTPUTSELECT
+on_off => reg_saida.OUTPUTSELECT
+clk => reg_saida[0].CLK
+clk => reg_saida[1].CLK
+saida[0] <= reg_saida[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= reg_saida[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|MaquinaDeCafe:datapath|Seletor:selet_temperatura
+entrada[0] => reg_saida.DATAB
+entrada[1] => reg_saida.DATAB
+on_off => reg_saida.OUTPUTSELECT
+on_off => reg_saida.OUTPUTSELECT
+clk => reg_saida[0].CLK
+clk => reg_saida[1].CLK
+saida[0] <= reg_saida[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= reg_saida[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora|Controladora:controladora_inst
+start => next_state.S2.DATAB
+start => Selector0.IN2
+seleciona_bebida <= seleciona_bebida.DB_MAX_OUTPUT_PORT_TYPE
+seleciona_tamanho <= seleciona_tamanho.DB_MAX_OUTPUT_PORT_TYPE
+seleciona_temperatura <= seleciona_temperatura.DB_MAX_OUTPUT_PORT_TYPE
+seleciona_acucar <= seleciona_acucar.DB_MAX_OUTPUT_PORT_TYPE
+colocar_dinheiro <= colocar_dinheiro.DB_MAX_OUTPUT_PORT_TYPE
+comecar_preparar <= comb.DB_MAX_OUTPUT_PORT_TYPE
+alerta_cheio <= alerta_cheio.DB_MAX_OUTPUT_PORT_TYPE
+dar_troco <= dar_troco.DB_MAX_OUTPUT_PORT_TYPE
+preparar <= preparar.DB_MAX_OUTPUT_PORT_TYPE
+reset => state~3.DATAIN
+clk => state~1.DATAIN
+cancelar => Selector1.IN5
+cancelar => next_state.S3.DATAB
+cancelar => next_state.S4.DATAB
+cancelar => next_state.S5.DATAB
+cancelar => next_state.S6.DATAB
+validade_compra => next_state.S8.DATAB
+validade_compra => Selector1.IN2
+
+

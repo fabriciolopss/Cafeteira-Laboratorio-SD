@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Trabalho Final\subtrator_troco\simulation\modelsim
+Esubtrator_troco
+Z1 w1686857193
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\altera\13.0sp1\Trabalho Final\subtrator_troco\simulation\modelsim
+Z7 8C:/altera/13.0sp1/Trabalho Final/subtrator_troco/subtrator_troco.vhd
+Z8 FC:/altera/13.0sp1/Trabalho Final/subtrator_troco/subtrator_troco.vhd
+l0
+L5
+V8Hn4@eoBCKP=ceL:a5[:z2
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1686858442.056000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/subtrator_troco/subtrator_troco.vhd|
+Z12 !s107 C:/altera/13.0sp1/Trabalho Final/subtrator_troco/subtrator_troco.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 ij2FJS]UST88jHBK>2g9l0
+!i10b 1
+Acomportamental
+R2
+R3
+R4
+R5
+DEx4 work 15 subtrator_troco 0 22 8Hn4@eoBCKP=ceL:a5[:z2
+l12
+L11
+V[1FaTzd9]AYPnzMOcc4]C0
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 N>68bG<6j6NejMD>MJ[]B3
+!i10b 1
+Etb_subtrator_troco
+Z15 w1686858421
+R2
+R3
+R4
+R5
+R6
+Z16 8C:/altera/13.0sp1/Trabalho Final/subtrator_troco/tb_subtrator_troco.vhd
+Z17 FC:/altera/13.0sp1/Trabalho Final/subtrator_troco/tb_subtrator_troco.vhd
+l0
+L5
+V?KR;R8nETDBTDcSQQIK>B3
+!s100 `44M]Hf=oSAPe>2QC:@9S3
+R9
+31
+!i10b 1
+Z18 !s108 1686858442.251000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/subtrator_troco/tb_subtrator_troco.vhd|
+Z20 !s107 C:/altera/13.0sp1/Trabalho Final/subtrator_troco/tb_subtrator_troco.vhd|
+R13
+R14
+Atest
+R2
+R3
+R4
+R5
+DEx4 work 18 tb_subtrator_troco 0 22 ?KR;R8nETDBTDcSQQIK>B3
+l18
+L8
+Vmj>JJ2P?FEcn4Ha4MW6_a0
+!s100 82ff=Yo34T5hnVlKbjeg<1
+R9
+31
+!i10b 1
+R18
+R19
+R20
+R13
+R14

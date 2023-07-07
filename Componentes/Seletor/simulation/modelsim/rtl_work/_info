@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Trabalho Final\Componentes\Seletor\simulation\modelsim
+Eseletor
+Z1 w1688676698
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\altera\13.0sp1\Trabalho Final\Componentes\Seletor\simulation\modelsim
+Z6 8C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd
+Z7 FC:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd
+l0
+L5
+V<`_cm8ek:1Zh=TPNgl0H>3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1688686239.228000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd|
+Z11 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/seletor.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 jKC2O3fZY;Vzj6X^k^WL20
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 seletor 0 22 <`_cm8ek:1Zh=TPNgl0H>3
+l19
+L17
+VPdjSN9AZG;?WW1c]To?FY2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 LVhBFnV2ZLiGN>X=M0Dkz0
+!i10b 1
+Etb_seletor
+Z14 w1688678255
+R3
+R4
+R5
+Z15 8C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/tb_Seletor.vhd
+Z16 FC:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/tb_Seletor.vhd
+l0
+L4
+V;HZ3m74]70^Yi^jf0c@Q53
+!s100 RklVV6:AlEK>7Bhk@@7S<3
+R8
+31
+!i10b 1
+Z17 !s108 1688686239.374000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/tb_Seletor.vhd|
+Z19 !s107 C:/altera/13.0sp1/Trabalho Final/Componentes/Seletor/tb_Seletor.vhd|
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 10 tb_seletor 0 22 ;HZ3m74]70^Yi^jf0c@Q53
+l25
+L7
+VW1>gINRWcdZHKNRzJXd^P2
+!s100 ;2DKn5VHOE@6QQh_ed8HE0
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

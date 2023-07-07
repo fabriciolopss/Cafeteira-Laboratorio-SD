@@ -1,0 +1,60 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Controladora_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Controladora
+# -- Compiling architecture rtl of Controladora
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling entity tb_Controladora
+# -- Compiling architecture testbench of tb_Controladora
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(5): (vcom-1136) Unknown identifier "std_logic".
+# 
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(25): Enumeration literal '1' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(26): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(27): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(28): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(29): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(30): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(31): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(32): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(33): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(39): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(40): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(41): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(42): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(43): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(44): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(45): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(46): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(47): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(53): Enumeration literal '1' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(54): Enumeration literal '1' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(55): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(56): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(57): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(58): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(59): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(60): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(61): Enumeration literal '0' is not of type (error).
+# ** Error: C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd(71): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Controladora_run_msim_rtl_vhdl.do line 10
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd}"

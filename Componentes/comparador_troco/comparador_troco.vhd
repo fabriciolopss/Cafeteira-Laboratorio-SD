@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity comparador_troco is
+    port(
+        valor_troco : in std_logic_vector(5 downto 0);
+        compra_valida : out std_logic
+    );
+end comparador_troco;
+
+architecture comportamental of comparador_troco is
+begin
+    process(valor_troco)
+    begin
+        if(valor_troco >= "000000") then
+            compra_valida <= '1';
+        else
+            compra_valida <= '0';
+        end if;
+    end process;
+end comportamental;

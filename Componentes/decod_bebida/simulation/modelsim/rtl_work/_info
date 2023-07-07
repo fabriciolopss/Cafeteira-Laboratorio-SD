@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Trabalho Final\decod_bebida\simulation\modelsim
+Edecod_bebida
+Z1 w1687122323
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\13.0sp1\Trabalho Final\decod_bebida\simulation\modelsim
+Z5 8C:/altera/13.0sp1/Trabalho Final/decod_bebida/decod_bebida.vhd
+Z6 FC:/altera/13.0sp1/Trabalho Final/decod_bebida/decod_bebida.vhd
+l0
+L4
+Vz3FZl_7F4P@R0^V<dJcJ<3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1687122609.566000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/decod_bebida/decod_bebida.vhd|
+Z10 !s107 C:/altera/13.0sp1/Trabalho Final/decod_bebida/decod_bebida.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 OKcnNMZ>dAk5jR8oo<NYC3
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 12 decod_bebida 0 22 z3FZl_7F4P@R0^V<dJcJ<3
+l11
+L10
+V6[`iPPa;=:C@?o3;>^UhB1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 d0n?h9VIJbzgf[NkcgLQ[1
+!i10b 1
+Etb_decod_bebida
+Z13 w1687122545
+R2
+R3
+R4
+Z14 8C:/altera/13.0sp1/Trabalho Final/decod_bebida/tb_decod_bebida.vhd
+Z15 FC:/altera/13.0sp1/Trabalho Final/decod_bebida/tb_decod_bebida.vhd
+l0
+L4
+VgLC:U[C@?2;]EkIzTQm>10
+!s100 Eh[k>n;UfO>aCVUhXS9=Z0
+R7
+31
+!i10b 1
+Z16 !s108 1687122609.703000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/decod_bebida/tb_decod_bebida.vhd|
+Z18 !s107 C:/altera/13.0sp1/Trabalho Final/decod_bebida/tb_decod_bebida.vhd|
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 tb_decod_bebida 0 22 gLC:U[C@?2;]EkIzTQm>10
+l23
+L7
+VmXPaz18M1RS^_Y18Z]N`d1
+!s100 OEYB;2Y872UfkB>kARljo1
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12

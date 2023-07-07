@@ -1,0 +1,46 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
+
+entity tb_comparador_troco is
+end tb_comparador_troco;
+
+architecture test of tb_comparador_troco is
+
+component comparador_troco is 
+    port 
+    (
+        valor_troco : in std_logic_vector(5 downto 0));
+        compra_valida : out std_logic;
+    );
+
+end component;
+
+signal fio_valor_troco: std_logic_vector(5 downto 0);
+signal fio_compra_valida: std_logic;
+
+begin
+    uut: comparador_troco port map(
+        valor_troco => fio_valor_troco,
+        compra_valida => fio_compra_valida
+    );
+
+    process
+    begin
+        fio_valor_troco <= "000000";
+        wait for 10 ns;
+        assert (fio_compra_valida = '1') report "Test failed for fio_valor_troco = 000000" severity error;
+
+        fio_valor_troco <= "000001";
+        wait for 10 ns;
+        assert (fio_compra_valida = '1') report "Test failed for fio_valor_troco = 000001" severity error;
+
+        fio_valor_troco <= "111111";
+        wait for 10 ns;
+        assert (fio_compra_valida = '1') report "Test failed for fio_valor_troco = 111111" severity error;
+
+        -- Add more test cases here
+
+        wait;
+    end process;
+end test;

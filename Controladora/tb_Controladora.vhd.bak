@@ -1,0 +1,102 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_Controladora is
+end entity tb_Controladora;
+
+architecture behavior of tb_Controladora is
+    signal start, reset, clk, cancelar, validade_compra : std_logic;
+    signal bebida, tamanho, temperatura, acucar, dinheiro, preparar, alerta_cheio, dar_troco : std_logic;
+
+    constant clk_period : time := 10 ns;
+
+begin
+
+    -- Component instantiation
+    uut : entity work.Controladora
+    port map (
+        start => start,
+        reset => reset,
+        clk => clk,
+        cancelar => cancelar,
+        validade_compra => validade_compra,
+        bebida => bebida,
+        tamanho => tamanho,
+        temperatura => temperatura,
+        acucar => acucar,
+        dinheiro => dinheiro,
+        preparar => preparar,
+        alerta_cheio => alerta_cheio,
+        dar_troco => dar_troco
+    );
+
+    -- Clock process
+    clk_process : process
+    begin
+        clk <= '0';
+        wait for clk_period / 2;
+        clk <= '1';
+        wait for clk_period / 2;
+    end process clk_process;
+
+    -- Stimulus process
+    stimulus_process : process
+    begin
+        -- Initialize signals
+        start <= '0';
+        reset <= '0';
+        cancelar <= '0';
+        validade_compra <= '0';
+
+        -- Reset
+        reset <= '1';
+        wait for 20 ns;
+        reset <= '0';
+
+        -- Test case 1: Selecting a beverage
+        start <= '1';
+        wait for clk_period * 5;
+        start <= '0';
+        wait for clk_period * 5;
+
+        -- Test case 2: Selecting temperature
+        wait for clk_period * 5;
+
+        -- Test case 3: Selecting sugar
+        wait for clk_period * 5;
+
+        -- Test case 4: Selecting cup size
+        wait for clk_period * 5;
+
+        -- Test case 5: Inserting money
+        wait for clk_period * 5;
+        validade_compra <= '1';
+        wait for clk_period * 5;
+
+        -- Test case 6: Preparing the beverage
+        validade_compra <= '0';
+        wait for clk_period * 5;
+
+        -- Test case 7: Alerting cup is full
+        wait for clk_period * 5;
+
+        -- Test case 8: Giving change
+        wait for clk_period * 5;
+
+        -- Test case 9: Cancelling the order
+        cancelar <= '1';
+        wait for clk_period * 5;
+        cancelar <= '0';
+        wait for clk_period * 5;
+
+        -- Test case 10: Restarting the process
+        start <= '1';
+        wait for clk_period * 5;
+        start <= '0';
+        wait for clk_period * 5;
+
+        -- End of testbench
+        wait;
+    end process stimulus_process;
+
+end architecture behavior;

@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity decod_bebida_tb is
+end decod_bebida_tb;
+
+architecture Behavioral of decod_bebida_tb is
+    -- Component declaration for the unit under test (UUT)
+    component decod_bebida
+        Port ( tamanho : in STD_LOGIC_VECTOR (1 downto 0);
+               tipo_bebida : in STD_LOGIC_VECTOR (2 downto 0);
+               output : out STD_LOGIC_VECTOR (2 downto 0));
+    end component;
+
+    -- Signal declarations
+    signal tamanho_tb : STD_LOGIC_VECTOR (1 downto 0);
+    signal tipo_bebida_tb : STD_LOGIC_VECTOR (2 downto 0);
+    signal output_tb : STD_LOGIC_VECTOR (2 downto 0);
+
+begin
+    -- Instantiate the unit under test (UUT)
+    uut: decod_bebida port map (tamanho => tamanho_tb, tipo_bebida => tipo_bebida_tb, output => output_tb);
+
+    -- Stimulus process
+    stimulus_proc: process
+    begin
+        -- Test case 1
+        tamanho_tb <= "00";
+        tipo_bebida_tb <= "000";
+        wait for 10 ns;
+        
+        -- Test case 2
+        tamanho_tb <= "01";
+        tipo_bebida_tb <= "010";
+        wait for 10 ns;
+
+        -- Add more test cases as needed
+        
+        -- End simulation
+        wait;
+    end process;
+
+    -- Check the output values
+    check_output_proc: process
+    begin
+        -- Wait for initial signal values to settle
+        wait for 5 ns;
+
+        -- Check the output values after each stimulus
+        report "Output value: " & output_tb;
+        
+        -- Add more assertions as needed
+        
+        -- End simulation
+        wait;
+    end process;
+
+end Behavioral;

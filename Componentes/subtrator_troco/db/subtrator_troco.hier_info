@@ -1,0 +1,18 @@
+|subtrator_troco
+valor_bebida[0] => Add0.IN6
+valor_bebida[1] => Add0.IN5
+valor_bebida[2] => Add0.IN4
+dinheiro_guardado[0] => Add0.IN12
+dinheiro_guardado[1] => Add0.IN11
+dinheiro_guardado[2] => Add0.IN10
+dinheiro_guardado[3] => Add0.IN9
+dinheiro_guardado[4] => Add0.IN8
+dinheiro_guardado[5] => Add0.IN7
+valor_troco[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+valor_troco[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+

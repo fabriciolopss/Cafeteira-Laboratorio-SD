@@ -1,0 +1,22 @@
+|Controladora
+start => next_state.S2.DATAB
+start => Selector0.IN2
+bebida <= bebida.DB_MAX_OUTPUT_PORT_TYPE
+tamanho <= tamanho.DB_MAX_OUTPUT_PORT_TYPE
+temperatura <= temperatura.DB_MAX_OUTPUT_PORT_TYPE
+acucar <= acucar.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro <= dinheiro.DB_MAX_OUTPUT_PORT_TYPE
+preparar <= preparar.DB_MAX_OUTPUT_PORT_TYPE
+alerta_cheio <= alerta_cheio.DB_MAX_OUTPUT_PORT_TYPE
+dar_troco <= dar_troco.DB_MAX_OUTPUT_PORT_TYPE
+reset => state~3.DATAIN
+clk => state~1.DATAIN
+cancelar => Selector1.IN5
+cancelar => next_state.S3.DATAB
+cancelar => next_state.S4.DATAB
+cancelar => next_state.S5.DATAB
+cancelar => next_state.S6.DATAB
+validade_compra => next_state.S8.DATAB
+validade_compra => Selector1.IN2
+
+

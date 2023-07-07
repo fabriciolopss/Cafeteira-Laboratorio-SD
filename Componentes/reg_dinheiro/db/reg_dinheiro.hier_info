@@ -1,0 +1,39 @@
+|reg_dinheiro
+clk => dinheiro_registrado_reg[0]~reg0.CLK
+clk => dinheiro_registrado_reg[1]~reg0.CLK
+clk => dinheiro_registrado_reg[2]~reg0.CLK
+clk => dinheiro_registrado_reg[3]~reg0.CLK
+clk => dinheiro_registrado_reg[4]~reg0.CLK
+clk => dinheiro_registrado_reg[5]~reg0.CLK
+reset_reg => dinheiro_registrado_reg[0]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[1]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[2]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[3]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[4]~reg0.ACLR
+reset_reg => dinheiro_registrado_reg[5]~reg0.ACLR
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+enable => dinheiro_registrado_reg.OUTPUTSELECT
+dinheiro_guardado_reg[0] => Equal0.IN11
+dinheiro_guardado_reg[0] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[1] => Equal0.IN10
+dinheiro_guardado_reg[1] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[2] => Equal0.IN9
+dinheiro_guardado_reg[2] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[3] => Equal0.IN8
+dinheiro_guardado_reg[3] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[4] => Equal0.IN7
+dinheiro_guardado_reg[4] => dinheiro_registrado_reg.DATAB
+dinheiro_guardado_reg[5] => Equal0.IN6
+dinheiro_guardado_reg[5] => dinheiro_registrado_reg.DATAB
+dinheiro_registrado_reg[0] <= dinheiro_registrado_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[1] <= dinheiro_registrado_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[2] <= dinheiro_registrado_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[3] <= dinheiro_registrado_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[4] <= dinheiro_registrado_reg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dinheiro_registrado_reg[5] <= dinheiro_registrado_reg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

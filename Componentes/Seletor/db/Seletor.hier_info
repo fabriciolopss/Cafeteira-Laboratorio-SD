@@ -1,0 +1,15 @@
+|Seletor
+entrada[0] => reg_saida.DATAB
+entrada[1] => reg_saida.DATAB
+entrada[2] => reg_saida.DATAB
+on_off => reg_saida.OUTPUTSELECT
+on_off => reg_saida.OUTPUTSELECT
+on_off => reg_saida.OUTPUTSELECT
+clk => reg_saida[0].CLK
+clk => reg_saida[1].CLK
+clk => reg_saida[2].CLK
+saida[0] <= reg_saida[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= reg_saida[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= reg_saida[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

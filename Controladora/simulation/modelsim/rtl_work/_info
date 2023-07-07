@@ -1,0 +1,57 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Trabalho Final\Controladora\simulation\modelsim
+Econtroladora
+Z1 w1688423426
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\13.0sp1\Trabalho Final\Controladora\simulation\modelsim
+Z5 8C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd
+Z6 FC:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd
+l0
+L4
+V[gfBEA<W[F[Q_lNGAIi]g1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1688425590.026000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd|
+Z10 !s107 C:/altera/13.0sp1/Trabalho Final/Controladora/controladora.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 2NhZYk08XiBchHO7`=alJ1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 controladora 0 22 [gfBEA<W[F[Q_lNGAIi]g1
+l26
+L23
+V_V_5j0j>:4T]_ZgKeL@FV2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 OGidk;cWb1lbfB@U]EUL;2
+!i10b 1
+Etb_controladora
+w1688425568
+R4
+8C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd
+FC:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd
+l0
+L1
+V9h_5e2ohHDi6`eB8^LLl;3
+!s100 `KBaBRGQjBJh:kdNbI0KO0
+R7
+31
+!i10b 1
+!s108 1688425590.213000
+!s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd|
+!s107 C:/altera/13.0sp1/Trabalho Final/Controladora/tb_Controladora.vhd|
+R11
+R12
